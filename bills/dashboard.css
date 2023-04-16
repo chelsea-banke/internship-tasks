@@ -1,20 +1,7 @@
 body{
     background-image: linear-gradient(180deg, #7AA8C2, white);
-    overflow-y: hidden;
+    /* height: 100vh; */
     position: relative;
-}
-.container{
-    margin-top: 60px !important;
-}
-.overlay{
-    background-color: #80ACC564 !important;
-    word-spacing: 10px;
-}
-.demo{
-    width: 80%;
-}
-#example1{
-    width: 100% !important;
 }
 .lang-select {
     appearance: none;
@@ -44,11 +31,15 @@ body{
 .lang-option[data-image="./assets/fr.png"] {
     background-image: url('./assets/fr.png');
 }
-@media screen and (max-width:875px) {
-    body{
-        overflow-y: auto;
-    }
-    .container{
-        margin-top: 0px !important;
-    }
+.demo{
+    width: 300px;
+}
+.download-img{
+    width: 25px !important;
+}
+.data{
+    width: 250px;
+}
+.paid{
+    width: 70px;
 }

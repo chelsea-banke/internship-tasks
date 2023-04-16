@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="./login.css" rel="stylesheet">
     <title>Document</title>
-
     <script type="text/javascript">
         var verifyCallback = function(response) {
           console.log(response);
@@ -27,7 +26,7 @@
     <div class="relative mt-10 w-10/12 h-5/6 m-auto bg-white shadow-2xl flex justify-between max-[435px]:w-screen max-[435px]:mt-0 container">
         <div class="relative w-1/2 max-[875px]:hidden">
             <img src="./assets/bg.png" class="absolute w-full h-full z-0" alt="">
-            <div class="absolute w-full h-full z-1 overlay max-[875px]:relative">
+            <div class="absolute w-full h-full z-1 overlay">
                 <p class="text-4xl ml-10 mt-10 font-semibold">"I now manage <br> everything remotely"</p>
                 <p class="text-4xl ml-10 mt-5 w-10/12">I save a lot of money <br> with eneo digital <br> solutions</p>
                 <img src="./assets/enteteMK_branchement-removebg-preview 1.png" class="demo absolute bottom-0 left-10 max-[875px]:relative" />
@@ -36,7 +35,7 @@
         <div class="relative w-1/2 max-[875px]:w-full max-[875px]:w-full bg-white">
             <div class="flex w-10/12 justify-between m-auto mt-10">
                 <img src="./assets/Eneo logo.png" class="max-[500px]:ml-1"/>
-                <div class="mt-12 text-stone-500 max-[500px]:mr-5">Language: 
+                <div class="mt-12 text-stone-500">Language: 
                     <span class="text-violet-600">
                       <select class="lang-select bg-white">
                         <option class="lang-option" data-image="./assets/en.png">EN</option>
@@ -58,17 +57,17 @@
     async defer>
     </script>  
     <script>
-      const langSelect = document.querySelector('.lang-select');
-      const langOptions = document.querySelectorAll('.lang-option');
-      
-      langOptions.forEach((option) => {
-        option.style.backgroundImage = `url(${option.getAttribute('data-image')})`;
-      });
-      
-      langSelect.addEventListener('change', (event) => {
-        const selectedOption = event.target.selectedOptions[0];
-        langSelect.style.backgroundImage = `url(${selectedOption.getAttribute('data-image')})`;
-      });
+        const langSelect = document.querySelector('.lang-select');
+        const langOptions = document.querySelectorAll('.lang-option');
+        
+        langOptions.forEach((option) => {
+          option.style.backgroundImage = `url(${option.getAttribute('data-image')})`;
+        });
+        
+        langSelect.addEventListener('change', (event) => {
+          const selectedOption = event.target.selectedOptions[0];
+          langSelect.style.backgroundImage = `url(${selectedOption.getAttribute('data-image')})`;
+        });
     </script>
 </body>
 </html>

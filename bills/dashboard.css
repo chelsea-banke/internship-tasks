@@ -43,3 +43,33 @@ body{
 .paid{
     width: 70px;
 }
+@media screen and (max-width: 1197px) {
+    .status-data{
+        width: 230px !important;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 825px) {
+    .logo{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .download{
+        right: 0px;
+        width: 150px !important;
+        bottom: 10px;
+    }
+}
+@media screen and (max-width: 517px) {
+    .data{
+        width: 45% !important;
+    }
+    .status-data{
+        width: 42% !important;
+        margin-right: 13px;
+    }
+    .paid{
+        width: 40px;
+    }
+}

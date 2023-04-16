@@ -8,93 +8,93 @@
     <link href="./dashboard.css" rel="stylesheet">
     <title>Dashbaord</title>
 </head>
-<body>
-    <div class="w-11/12 h-fit bg-white shadow-2xl m-auto mt-10">
-        <nav class="flex justify-between flex-wrap mx-10 pt-3 border-b">
-            <img src="./assets/Eneo logo.png"/>
-            <div class="flex mt-7 text-stone-700">
-                <div class="flex mt-1 mr-10 w-fit">
-                    <div class="px-3"><a href="">Home</a></div>
-                    <div class="px-3"><a href="">Search</a></div>
-                    <div class="px-3"><a href="">Payment</a></div>
-                    <div class="px-3"><a href="">Help</a></div>
+    <body>
+        <div class="w-11/12 h-fit bg-white shadow-2xl m-auto mt-10 max-[740px]:w-full max-[740px]:mt-0">
+            <nav class="flex justify-between flex-wrap mx-10 pt-3 border-b max-[740px]:block  max-[740px]:mx-5">
+                <img src="./assets/Eneo logo.png" class="logo"/>
+                <div class="flex mt-7 text-stone-700 max-[740px]:flex max-[740px]:mt-4 justify-between flex-wrap"> 
+                    <div class="flex mt-1 mr-10 w-fit">
+                        <div class="px-3 max-[740px]:pl-0"><a href="">Home</a></div>
+                        <div class="px-3"><a href="">Search</a></div>
+                        <div class="px-3"><a href="">Payment</a></div>
+                        <div class="px-3"><a href="">Help</a></div>
+                    </div>
+                    <div class="text-stone-500">Language: 
+                        <span class="text-violet-600">
+                        <select class="lang-select bg-white">
+                            <option class="lang-option" data-image="./assets/en.png">EN</option>
+                            <option class="lang-option" data-image="./assets/fr.png">FR</option>
+                        </select>
+                        </span>
+                    </div>
                 </div>
-                <div class="text-stone-500">Language: 
-                    <span class="text-violet-600">
-                      <select class="lang-select bg-white">
-                        <option class="lang-option" data-image="./assets/en.png">EN</option>
-                        <option class="lang-option" data-image="./assets/fr.png">FR</option>
-                      </select>
-                    </span>
+            </nav>
+            <div class="m-auto flex justify-around w-full h-fit">
+                <div class="relative w-8/12 max-[740px]:w-full">
+                    <div class="text-lg max-[740px]:text-sm w-fit mt-20 absolute right-0 max-[1100px]:mt-10 max-[825px]:mt-5 max-[740px]:relative max-[740px]:m-auto max-[740px]:mt-5">
+                        <div class="w-fit bg-stone-200 px-10 py-3 rounded-md">Contract Number: <span class="ml-3 font-semibold">203460875</span></div>
+                        <div class="text-center font-semibold mt-2 ">TCHINDA ALAIN BLAISE</div>
+                    </div>
+                    <div class="ml-3 bg-stone-200 px-10 py-3 rounded-md w-full absolute bottom-0 max-[740px]:relative max-[740px]:ml-0 max-[740px]:mt-5">
+                        <div>Old Bills <span>(Select Date):</span></div>
+                    </div>
+                </div>
+                <div class="w-3/12 max-[740px]:w-0">
+                    <img src="./assets/enteteMK_branchement-removebg-preview 1.png" class="demo max-[740px]:hidden"/>
+                    <button class="w-11/12 bg-gray-500 text-white py-2 rounded-md max-[740px]:text-sm  max-[740px]:fixed download">Download Bill <img src="./assets/download.png" class="inline download-img mb-1"/></button>
                 </div>
             </div>
-        </nav>
-        <div class="m-auto flex justify-around w-full h-fit">
-            <div class="relative w-8/12">
-                <div class="w-fit mt-20 absolute right-0">
-                    <div class="text-lg w-fit bg-stone-200 px-10 py-3 rounded-md">Contract Number: <span class="ml-3 font-semibold">203460875</span></div>
-                    <div class="text-center text-lg font-semibold mt-2 ">TCHINDA ALAIN BLAISE</div>
+            <div class="flex justify-evenly px-2 mx-10 text-center bg-blue-200 mt-10 rounded-md flex-wrap max-[740px]:mx-0">
+                <div class="data">
+                    <div class="my-2">
+                        <div class="mr-3">Bill Date</div>
+                        <div class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">18 March 2023</div>
+                    </div>
+                    <div class="my-2">
+                        <div class="mr-3">Bill Date Limit</div>
+                        <div  class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">28 March 2023</div>
+                    </div>
                 </div>
-                <div class="ml-3 bg-stone-200 px-10 py-3 rounded-md w-full absolute bottom-0">
-                    <div>Old Bills <span>(Select Date):</span></div>
+                <div class="data">
+                    <div class="my-2">
+                        <div class="mr-3">Amount</div>
+                        <div class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">1050 FCFA</div>
+                    </div>
+                    <div class="my-2">
+                        <div class="mr-3">Bill Type</div>
+                        <div  class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">RECONNECTION</div>
+                    </div>
+                </div>
+                <div class="data">
+                    <div class="my-2">
+                        <div class="mr-3">Bill Number</div>
+                        <div class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">760880323</div>
+                    </div>
+                    <div class="my-2">
+                        <div class="mr-3">Contract Number</div>
+                        <div  class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">203460875</div>
+                    </div>
+                </div>
+                <div class="data bg-white text-green-600 rounded-xl border-2 border-blue-200 status-data">
+                    <div class="text-6xl mt-11 max-[517px]:text-4xl">PAID <img src="./assets/paid.png" class="inline paid mb-3"></div>
                 </div>
             </div>
-            <div class="w-3/12">
-                <img src="./assets/enteteMK_branchement-removebg-preview 1.png" class="demo"/>
-                <button class="w-11/12 bg-gray-500 text-white py-2 rounded-md">Download Bill <img src="./assets/download.png" class="inline download-img mb-1"/></button>
+            <div class="w-full m-auto px-10 mt-20 mb-20 max-[740px]:px-0">
+                <img src="./assets/bill_image.png" class="w-full"/>
             </div>
         </div>
-        <div class="flex justify-evenly px-2 mx-10 text-center bg-blue-200 mt-10 rounded-md flex-wrap">
-            <div class="data">
-                <div class="my-2">
-                    <div class="mr-3">Bill Date</div>
-                    <div class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">18 March 2023</div>
-                </div>
-                <div class="my-2">
-                    <div class="mr-3">Bill Date Limit</div>
-                    <div  class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">28 March 2023</div>
-                </div>
-            </div>
-            <div class="data">
-                <div class="my-2">
-                    <div class="mr-3">Amount</div>
-                    <div class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">1050 FCFA</div>
-                </div>
-                <div class="my-2">
-                    <div class="mr-3">Bill Type</div>
-                    <div  class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">RECONNECTION</div>
-                </div>
-            </div>
-            <div class="data">
-                <div class="my-2">
-                    <div class="mr-3">Bill Number</div>
-                    <div class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">760880323</div>
-                </div>
-                <div class="my-2">
-                    <div class="mr-3">Contract Number</div>
-                    <div  class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">203460875</div>
-                </div>
-            </div>
-            <div class="data bg-white text-green-600 rounded-xl border border-2 border-blue-200">
-                <div class="text-6xl mt-11">PAID <img src="./assets/paid.png" class="inline paid mb-3"></div>
-            </div>
-        </div>
-        <div class="w-full m-auto px-10 mt-20">
-            <img src="./assets/bill_image.png" class="w-full"/>
-        </div>
-    </div>
-    <script>
-        const langSelect = document.querySelector('.lang-select');
-        const langOptions = document.querySelectorAll('.lang-option');
-        
-        langOptions.forEach((option) => {
-          option.style.backgroundImage = `url(${option.getAttribute('data-image')})`;
-        });
-        
-        langSelect.addEventListener('change', (event) => {
-          const selectedOption = event.target.selectedOptions[0];
-          langSelect.style.backgroundImage = `url(${selectedOption.getAttribute('data-image')})`;
-        });
-    </script>
-</body>
+        <script>
+            const langSelect = document.querySelector('.lang-select');
+            const langOptions = document.querySelectorAll('.lang-option');
+            
+            langOptions.forEach((option) => {
+            option.style.backgroundImage = `url(${option.getAttribute('data-image')})`;
+            });
+            
+            langSelect.addEventListener('change', (event) => {
+            const selectedOption = event.target.selectedOptions[0];
+            langSelect.style.backgroundImage = `url(${selectedOption.getAttribute('data-image')})`;
+            });
+        </script>
+    </body>
 </html>

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="./dashboard.css" rel="stylesheet">
-    <title>Dashbaord</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="./dashboard.css" rel="stylesheet">
+        <title>Dashbaord</title>
+    </head>
     <body>
         <div class="w-11/12 h-fit bg-white shadow-2xl m-auto mt-10 max-[740px]:w-full max-[740px]:mt-0">
             <nav class="flex justify-between flex-wrap mx-10 pt-3 border-b max-[740px]:block  max-[740px]:mx-5">
@@ -35,8 +35,11 @@
                         <div class="w-fit bg-stone-200 px-10 py-3 rounded-md">Contract Number: <span class="ml-3 font-semibold">203460875</span></div>
                         <div class="text-center font-semibold mt-2 ">TCHINDA ALAIN BLAISE</div>
                     </div>
-                    <div class="ml-3 bg-stone-200 px-10 py-3 rounded-md w-full absolute bottom-0 max-[740px]:relative max-[740px]:ml-0 max-[740px]:mt-5">
-                        <div>Old Bills <span>(Select Date):</span></div>
+                    <div class="ml-3 flex justify-evenly bg-stone-200 px-10 py-3 rounded-md w-full absolute bottom-0 max-[740px]:relative max-[740px]:ml-0 max-[740px]:mt-5 max-[770px]:px-5 max-[365px]:text-sm">
+                        <div class="w-1/4 max-[1200px]:w-1/2">Old Bills <span>(Select Date):</span></div>
+                        <select class="font-semibold float-right w-3/4  max-[1200px]:w-1/2">
+                            <option>76088031 march 2023</option>
+                        </select>
                     </div>
                 </div>
                 <div class="w-3/12 max-[740px]:w-0">
@@ -75,8 +78,8 @@
                         <div  class="bg-white w-11/12 py-2 mt-1 rounded-md text-green-600">203460875</div>
                     </div>
                 </div>
-                <div class="data bg-white text-green-600 rounded-xl border-2 border-blue-200 status-data">
-                    <div class="text-6xl mt-11 max-[517px]:text-4xl">PAID <img src="./assets/paid.png" class="inline paid mb-3"></div>
+                <div class="data status-data">
+                    <div class="bg-white text-green-600 rounded-xl border-2 border-blue-200 text-6xl max-[517px]:text-4xl h-fit mt-9 py-4">PAID <img src="./assets/paid.png" class="inline paid mb-3"></div>
                 </div>
             </div>
             <div class="w-full m-auto px-10 mt-20 mb-20 max-[740px]:px-0">

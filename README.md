@@ -1,2 +1,1 @@
-# internship-task
-my internship tasks
+# internship-tasks
